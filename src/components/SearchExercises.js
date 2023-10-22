@@ -6,6 +6,7 @@ import { exerciseOptions, fetchData } from '../utils/fetchData';
 import HorizontalScrollBar from './HorizontalScrollBar';
 
 const SearchExercises = () => {
+
     const [search, setSearch] = useState('');
     const [exercises, setExercises] = useState([]);
     const [bodyParts, setBodyParts] = useState([]);
@@ -32,6 +33,7 @@ const SearchExercises = () => {
                     || exercise.bodyPart.toLowerCase().includes(search)
             );
 
+            console.log(exerciseData);
             setSearch('');
             setExercises(searchedExercises);
         }
