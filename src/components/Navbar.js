@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
 
 import Logo from '../assets/images/Logo.png';
+import webLogo from '../assets/images/webLogo.png';
 
 const Navbar = () => {
     return (
@@ -22,7 +23,7 @@ const Navbar = () => {
             }} px='20px'>
             <Link to="/">
                 <img
-                    src={Logo}
+                    src={webLogo}
                     alt='logo'
                     style={{
                         width: '48px',
